@@ -1,0 +1,21 @@
+<h2>Monte seu Acai</h2>
+<app-selecao title='Tamanho'>
+    <tr *ngFor="let tamanho of tamanhos; let i = index">
+        <input type="radio" (click)="onSelect2(tamanho)" [disabled]="!tamanho.done && contador2>=1">
+        <td>{{tamanho.description}}</td>
+    </tr>
+</app-selecao>
+<app-selecao title2="Acréscimos">
+    <tr *ngFor="let acrescimo of acrescimos; let i = index">
+        <ng-container>
+           
+            <input type="checkbox" [(ngModel)]="acrescimo.done " (click)="onSelect(acrescimo)"
+                [disabled]="!acrescimo.done && contador>=3">
+            <td>{{acrescimo.description}}</td>
+
+        </ng-container>
+    </tr>
+    <p>Escolha até 3: ( {{this.contador}} selecionados)</p>
+
+</app-selecao>
+<!--[disabled]="!acrescimo.done"-->

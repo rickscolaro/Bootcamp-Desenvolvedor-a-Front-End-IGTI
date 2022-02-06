@@ -1,0 +1,38 @@
+/*Mobile Iphone x*/
+
+@media (max-width: 480px) {
+   #nav_bar{
+       padding-left: 8px;
+       padding-right: 8px;
+   }
+   
+   #carrossel {
+    #img_1_carrossel {
+      filter: brightness(50%);
+      height: 630px;
+      object-fit: cover;
+      width: auto;
+      object-position: center bottom ;
+      object-position: left bottom;
+      object-position: 10% ; /*Desloco para direita*/
+      
+    }
+    #img_2_carrossel {
+      filter: brightness(50%);
+      height: 630px;
+      object-fit: cover;
+      width: auto;
+      object-position: center bottom;
+      
+      
+    }
+    #img_3_carrossel {
+      filter: brightness(50%);
+      height: 630px;
+      object-fit: cover;
+      width: auto;
+      object-position: center bottom;
+      
+    }
+  }
+}

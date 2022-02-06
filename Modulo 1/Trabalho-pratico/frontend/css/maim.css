@@ -1,0 +1,114 @@
+/*Plano de fundo*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  margin: 0; /* Faz os outros containers conseguirem colar na pagina*/
+  background-color: rgb(252, 255, 214);
+}
+/********************************************************/
+/*Descrição*/
+#title {
+  text-align: center;
+}
+
+#about {
+  background-color: white;
+  width: 80%;
+  display: flex;
+}
+#photo_1 {
+  display: flex;/* Alinha a foto com a div*/
+  margin-right: 35px;
+  width: 380px;
+}
+#text_about {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+/********************************************************/
+/* Citações*/
+#quote {
+  height: 85px;
+  width: 80%; /*Ajusta a distancia da lateral*/
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgb(128, 0, 0);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;/* Alinha os itens que estão em coluna no centro na vertical*/
+}
+#elon {
+  margin: 0; /*Diminui a distancia entre a citação e o nome de quem cita*/
+}
+
+/********************************************************/
+/*Conteudo Principal*/
+#content {
+  display: flex;
+  margin-top: 25px;
+  width: 80%; /*Ajusta a distancia da lateral*/
+  
+}
+#photo_2 {
+  
+  width: 410px;
+  height: 310px;
+}
+/*Essa div junta a imagem e escrita lado a lado com flex */
+#ingredients {
+  display: flex;
+  margin-top: 0;
+}
+#preparation {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px; /*Distancia Ingredientes de bolos relacionados*/
+  
+}
+
+#preparation h4 {
+  margin: 0;
+  padding-left: 6%;
+}
+#preparation ul {
+  margin-top: 2%;
+}
+
+/********************************************************/
+/*Barra lateral*/
+#side_bar {
+  background-color: white;
+}
+#side_text {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4%;
+}
+
+#side_bar {
+  padding-right: 25px;
+}
+
+/********************************************************/
+/*Contato*/
+#title_2 {
+  text-align: center;
+}
+#contact {
+  margin-left: 10%;
+}
+
+#contact_input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}

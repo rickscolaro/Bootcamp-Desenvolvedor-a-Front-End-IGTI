@@ -1,0 +1,20 @@
+.vazio {
+  padding: 15px;
+  font-size: 20px;
+  color: orangered;
+}
+
+.resultPedido {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  font-size: 16px;
+}
+
+.botaoPedido {
+ display: flex;
+ justify-content: space-between;
+}
+
+

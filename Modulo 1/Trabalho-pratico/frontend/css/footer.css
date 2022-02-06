@@ -1,0 +1,29 @@
+footer {
+  width: 100%;
+}
+
+#footer_tag {
+  height: 130px;
+  display: flex;
+  background-color: #3e3e3e;
+  color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  flex-flow: nowrap;
+}
+
+#img_1 {
+  width: 60px;
+}
+#img_2 {
+  width: 60px;
+}
+#img_3 {
+  width: 60px;
+}
+#img_4 {
+  width: 60px;
+}

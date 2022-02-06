@@ -1,0 +1,23 @@
+#zoom_teste {
+  width: 140px;
+  height: 140px;
+  transition: width 0.5s, height 0.5s;
+}
+
+#zoom_teste:hover {
+  width: 200px;
+  height: 200px;
+}
+
+#banner_1_teste {
+  height: 35rem;
+  background-color: black;
+}
+#banner_1_teste > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 35rem;
+  opacity: 0.5;
+}

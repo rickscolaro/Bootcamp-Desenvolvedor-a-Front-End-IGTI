@@ -1,0 +1,52 @@
+body {
+  overflow-y: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 5fr;/*1/6 e 5/6*/
+  grid-gap: 20px;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.gallery {
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery__img {
+  margin-bottom: 10px;
+  min-height: 60vh;
+  object-fit: cover;
+}
+
+.img-nav {
+  overflow: hidden;
+}
+
+.img-nav a {
+  height: 175px;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.img-nav__img {
+  object-fit: cover;
+  filter: saturate(0);
+  transition: 0.3s ease all;
+}
+
+.img-nav__img:hover {
+  transform: scale(1.05);
+  filter: saturate(1);
+}

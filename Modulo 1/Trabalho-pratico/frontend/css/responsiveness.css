@@ -1,0 +1,165 @@
+/*Mobile Iphone x*/
+
+@media (max-width: 480px) {
+  main {
+    display: flex;
+  }
+
+  /*Header*/
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: black;
+  }
+
+  header {
+    display: flex;
+    position: fixed;
+    width: 100%; /*Se o header não tiver 100% o nav não fica*/
+  }
+  #title {
+    margin-top: 75px;
+  }
+
+  /***************************************************/
+  /*Introdução*/
+  #about {
+    display: flex;
+    flex-direction: column;
+    width: 345px;
+  }
+
+  #photo_1 {
+    display: flex;
+    width: 345px;
+  }
+
+  #text_about {
+    margin-top: 0;
+    padding: 25px;
+  }
+
+  #h2_cake_text {
+    margin-bottom: 5px;
+  }
+  /***************************************************/
+  /* Citação*/
+  #quote {
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    height: 130px;
+  }
+
+  #elon {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /***************************************************/
+  /* Conteudo Principal*/
+  #content {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  #photo_2 {
+    width: 320px;
+    height: 240px;
+  }
+
+  #ingredients {
+    flex-wrap: wrap;
+  }
+  #preparation {
+    margin-top: 20px;
+  }
+  /***************************************************/
+  /*Barra lateral*/
+
+  #side_text ul {
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+
+  /***************************************************/
+  /*Contato*/
+  #contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #label_1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #label_2 {
+    display: flex;
+    flex-direction: column;
+  }
+  #label_3 {
+    display: flex;
+    flex-direction: column;
+  }
+  #label_4 {
+    display: flex;
+    flex-direction: column;
+  }
+  #label_5 {
+    display: none; /* Faz o botão desaparecer*/
+  }
+
+  #buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+  }
+
+  #submit_button {
+    margin-bottom: 13px;
+    background-color: chartreuse;
+  }
+  #do_not_send_button {
+    background-color: orange;
+  }
+
+  /***************************************************/
+  /*Rodapé*/
+
+  #footer_tag {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  #copyrights {
+    margin-bottom: 5px;
+  }
+  #socia_media {
+    margin-top: 22px;
+  }
+}
+/************************************************************************/
+
+/* Qualquer dispositivo entre 481 pixels e 1300 pixels*/
+
+@media only screen and (min-width: 481px) and (max-width: 1300px) {
+  main {
+    background-image: linear-gradient(45deg, white, purple);
+    flex-wrap: wrap;
+  }
+  #about {
+    flex-wrap: wrap;
+  }
+
+  #content {
+    flex-wrap: wrap;
+  }
+
+  #ingredients {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>
+            Cardápio
+        </span>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+        <mat-icon [matBadge]="pedidoService.getQuantidadeTotal()" matBadgeColor="accent">shopping_cart</mat-icon>
+        
+        <span style="flex: 1"></span>
+       
+        <a mat-button routerLink="/pedido">VER PEDIDO</a>
+        <span style="flex: 1"></span>
+        <span>{{pedidoService.getValorTotal() | currency}}</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-action-list>
+    <ng-container *ngFor="let produto of produtos; let i = index">
+        
+        <ng-container *ngIf=" i === 0 || produto.categoria !== produtos[i - 1].categoria ">
+            <h2>{{ produto.categoria }}</h2>
+        </ng-container>
+        
+        <mat-list-item (click)="pedidoService.adicionaProduto(produto)">
+            <span style="flex: 1">{{produto.descricao}}</span>
+            <span>{{produto.preco |currency}}</span>
+        </mat-list-item>
+    </ng-container>
+</mat-action-list>

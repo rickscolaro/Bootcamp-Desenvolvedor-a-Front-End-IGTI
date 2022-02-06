@@ -1,0 +1,145 @@
+/* Ligar scss: sass --watch src/scss:dist/css      */
+$crimson: #d52856;
+$hover: #b52249;
+
+.logo {
+  height: 2.7em;
+  height: 2.7em;
+}
+/**************************************************************************/
+/*BOTÕES*/
+#bottom {
+  background-color: $crimson;
+  color: #fff;
+}
+
+#bottom:hover {
+  background-color: $hover;
+}
+/**************************************************************************/
+#carrossel {
+  #img_1_carrossel {
+    filter: brightness(50%);
+    height: 630px;
+    object-fit: cover;
+    width: auto;
+    object-position: center bottom;
+    object-position: 100% 15%;
+  }
+  #img_2_carrossel {
+    filter: brightness(50%);
+    height: 630px;
+    object-fit: cover;
+    width: auto;
+    object-position: center bottom;
+    object-position: 100% 8%;
+  }
+  #img_3_carrossel {
+    filter: brightness(50%);
+    filter: brightness(50%);
+    height: 630px;
+    object-fit: cover;
+    width: auto;
+    object-position: center bottom;
+    object-position: 100% 8%;
+  }
+}
+/**************************************************************************/
+
+/*#banner_1 {
+  #image_trilha {
+    height: 250px;
+    object-fit: cover;
+    width: auto;
+    filter: brightness(50%);
+  }
+}*/
+
+#banner_1 {
+  background: url(/src/images/trilha.jpg);
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 350px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  filter: brightness(50%);
+  background-attachment: fixed;
+  
+}
+.banner_1_text{
+  text-align: center;
+  bottom: 150px;
+  position: absolute;
+  color: #fff;
+  
+}
+
+/*#banner_1 figcaption {
+  width: 1250px;
+  position: absolute;
+  text-align: center;
+  top: 75px;
+  left: 795px;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}*/
+
+/**************************************************************************/
+.title_center {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  bottom: 150px;
+}
+/**************************************************************************/
+
+#image_beach {
+  height: 370px;
+  object-fit: cover;
+  width: auto;
+  object-position: center bottom;
+  object-position: 100% 70%;
+  filter: brightness(50%);
+}
+
+#banner_2 {
+  background: url(/src/images/treino-praia.jpg);
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 350px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  
+  background-attachment: fixed;/* Imagem fica fixa na tela ao rolar o scroll*/
+}
+
+
+
+/*#banner_2 figcaption {
+  width: 1250px;
+  position: absolute;
+  text-align: center;
+  top: 75px;
+  left: 810px;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}*/
+
+/**************************************************************************/
+/*MENSAGENS DE MARKETING*/
+
+#zoom {
+  transition: transform 0.5s; /* Animation */
+}
+
+#zoom:hover {
+  transform: scale(1.5);
+  transform-origin: top;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+/**************************************************************************/
+
